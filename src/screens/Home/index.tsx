@@ -1,12 +1,13 @@
 import React from "react";
-import { Container, Title, Logo } from "./styles";
 import ifrn from "../../assets/ifrn.png";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Container, theme } from "../../global/styles/theme";
+import { Logo, Title } from "../Home/styles";
 
 export default function Home() {
   return(
-    <Container>
+    <Container bgColor={theme.colors.primary}>
       <Logo source={ifrn} />
       <Title>Agenda IFRN</Title>
 

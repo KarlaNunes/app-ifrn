@@ -1,3 +1,5 @@
+import styled from "styled-components/native";
+
 export const theme = { 
     colors:{
         primary: "#1DB863",
@@ -8,3 +10,9 @@ export const theme = {
         title:"#333",
     },
 }
+
+export const Container = styled.View<{bgColor: string}>`
+    flex: 1;
+    background-color: ${props => props.bgColor};
+    align-items: center;
+`;
