@@ -10,4 +10,3 @@ export const TextInput = styled.TextInput<{border?: string} >`
     border-radius: 5px;
     border: ${props => props.border};
 `;
-
